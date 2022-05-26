@@ -548,4 +548,14 @@ img {
     max-width: 99px;
   }
 }
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 88%;
+  }
+  .navbar-top {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
