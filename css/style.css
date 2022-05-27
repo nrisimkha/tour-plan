@@ -449,8 +449,13 @@ img {
   top: 0;
   right: 0;
   background: #EC1F46;
-  padding: 13px 26px;
+  padding: 12px 25px;
   border: none;
+}
+
+.search__image {
+  height: 16px;
+  width: 16px;
 }
 
 .user {
@@ -519,6 +524,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .hotel-info__name {
@@ -557,6 +563,7 @@ img {
   font-size: 24px;
   line-height: 30px;
   color: #333333;
+  margin-top: 4px;
 }
 
 .hotel-wrapper {
@@ -575,6 +582,23 @@ img {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+}
+
+.hotel-grid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hotel-grid__photo {
+  width: 728px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
 }
 
 .stars {
@@ -604,6 +628,65 @@ img {
 .rating__counter-5 {
   font-size: 10px;
   line-height: 13px;
+}
+
+.swiper {
+  -ms-flex-preferred-size: content;
+      flex-basis: content;
+  max-width: 728px;
+  max-height: 450px;
+  position: relative;
+  margin-left: 0px;
+  margin-right: 0;
+}
+
+.swiper::after {
+  content: '';
+  width: 728px;
+  height: 100%;
+  position: absolute;
+  z-index: 64;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  border-radius: 8px;
+}
+
+.swiper-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  z-index: 108;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+}
+
+.swiper-button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
+
+.swiper-button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
 }
 
 @media (max-width: 1200px) {
