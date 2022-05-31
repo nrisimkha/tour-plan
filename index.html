@@ -184,10 +184,14 @@
 								</div>
 								<!-- /.booking-pricetag -->
 								<div class="booking-number">
-									<span class="booking-number__guests">2 x Guests</span>
-									<!-- /.booking-number__guests -->
-									<span class="booking-number__room">1 x Room</span>
-									<!-- /.booking-number__room -->
+									<div class="booking-number__icons">
+										<img src="/img/user.svg" alt="Guests icon" />
+										<img src="/img/home.svg" alt="Home icon" />
+									</div>
+									<div class="booking-number__info">
+										<span class="booking-number__guests">2 x Guests</span>
+										<span class="booking-number__room">1 x Room</span>
+									</div>
 								</div>
 								<!-- /.booking-number -->
 							</div>
@@ -195,7 +199,13 @@
 							<div class="booking-quick">
 								<span class="booking-quick__text">Quick Booking</span>
 								<!-- /.booking-quick__text -->
-								<span class="booking-quick__tel">12100</span>
+								<a href="telto:12100" class="booking-quick__tel"
+									><img
+										class="booking-quick__icon"
+										src="./img/call.svg"
+										alt="Call: 12100"
+									/>12100</a
+								>
 								<!-- /.booking-quick__tel -->
 							</div>
 							<!-- /.booking__quick -->
@@ -223,6 +233,26 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.hotel -->
+		<section class="newsletter">
+			<div class="container">
+				<div class="newslatter-text">
+					<span class="newslatter-text__subscribe">subscribe to our</span>
+					<strong class="newslatter-text__header">newslatter</strong>
+				</div>
+				<!-- /.newslatter-text -->
+				<form action="#" class="newslatter-email newslatter-email__form">
+					<input
+						type="email"
+						class="newslatter-email__input"
+						placeholder="Your email address"
+					/>
+					<button class="newslatter__button">Send</button>
+				</form>
+				<!-- /.search -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.newsletter -->
 		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
