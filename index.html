@@ -136,43 +136,28 @@
 				</div>
 				<!-- /.hotel-info -->
 				<div class="hotel-grid">
-					<!-- Slider main container -->
-					<div class="slider">
+					<div class="hotel-photos hotel-photos__top">
 						<div class="swiper">
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper">
 								<!-- Slides -->
 								<div class="swiper-slide">
-									<img
-										class="hotel-grid__photo"
-										src="img/Rectangle-5.png"
-										alt="Slide-1"
-									/>
+									<img class="swiper-slide--item" src="/img/Rectangle-5.png" alt="Slide 1" />
 								</div>
 								<div class="swiper-slide">
-									<img
-										class="hotel-grid__photo"
-										src="img/hotel.jpg"
-										alt="Slide-2"
-									/>
+									<img class="swiper-slide--item" src="/img/hotel.jpg" alt="Slide 2" />
 								</div>
 								<div class="swiper-slide">
-									<img
-										class="hotel-grid__photo"
-										src="img/hotel-1.jpg"
-										alt="Slide-3"
-									/>
+									<img class="swiper-slide--item" src="/img/hotel-1.jpg" alt="Slide 3" />
 								</div>
 							</div>
 							<!-- If we need navigation buttons -->
-							<button class="slider-button slider-button--prev"></button>
-							<button class="slider-button slider-button--next"></button>
+							<div class="swiper-button swiper-button--prev"></div>
+							<div class="swiper-button swiper-button--next"></div>
 						</div>
-						<!-- /.swiper -->
 					</div>
-					<!-- /.slider -->
 					<div class="hotel-tools">
-						<div class="booking">
+						<div class="booking booking__bot">
 							<div class="booking-options">
 								<div class="booking-pricetag">
 									<span class="booking-pricetag__start">price starts as</span>
@@ -215,9 +200,10 @@
 						<!-- /.booking -->
 						<div class="map">
 							<iframe
+								class="map"
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10317.96960232594!2d-81.49931053318537!3d28.38465944809287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd8069ec4c9147%3A0xae329df2dda87c97!2z0KXQuNC70YLQvtC9INCT0YDQsNC90LQg0JLQsNC60LXQudGI0LXQvdGBINCa0LvQsNCxINCi0LDRgdC60LXQvdC4INCS0LjQu9C70LjQtNC2INCe0YDQu9Cw0L3QtNC-!5e0!3m2!1sru!2sua!4v1654003037437!5m2!1sru!2sua"
 								width="347"
-								height="213"
+								height="215"
 								style="border: 0"
 								allowfullscreen=""
 								loading="lazy"
@@ -262,7 +248,6 @@
 			</div>
 		</section>
 		<!-- /.newsletter -->
-		<div class="all-other"></div>
 		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/main.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

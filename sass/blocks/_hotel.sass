@@ -40,11 +40,6 @@
   &-grid
     display: flex
     justify-content: space-between
-    &__photo
-      width: 728px
-      height: 450px
-      object-fit: cover
-      border-radius: 8px
   &-tools
     display: flex
     flex-direction: column
@@ -68,41 +63,44 @@
     &-5
       font-size: 10px
       line-height: 13px
-.slider
-  position: relative
+.swiper
   width: 728px
   height: 450px
+  border-radius: 8px
+  position: relative
+  object-fit: cover
+  overflow: hidden
   &::after
-    content: ' '
-    width: 728px
-    height: 100%
+    content: ''
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+    border-radius: 8px
     position: absolute
-    z-index: 64
     top: 0
     bottom: 0
     right: 0
     left: 0
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-    border-radius: 8px
+    z-index: 16
   &-button
+    color: $primery
+    width: 30px
+    height: 30px
     position: absolute
     top: 50%
     margin-top: -15px
-    width: 30px
-    height: 30px
-    background-color: transparent
-    border: none
-    z-index: 16108
-    display: flex
-    align-items: center
-    justify-content: center
-    cursor: pointer
+    z-index: 108
     background-repeat: no-repeat
     background-size: 10px
     background-position: center
+    cursor: pointer
     &--next
       right: 18px
-      background-image: url(../img/arrow-next.svg)
+      background-image: url(/img/arrow-next.svg)
     &--prev
       left: 18px
-      background-image: url(../img/arrow-prev.svg)
+      background-image: url(/img/arrow-prev.svg)
+  &-slide
+    object-fit: cover
+    &--item
+      object-fit: cover
+      width: 728px
+      height: 450px
