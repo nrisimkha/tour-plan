@@ -635,7 +635,7 @@ img {
   line-height: 13px;
 }
 
-.swiper {
+.swip {
   width: 728px;
   height: 450px;
   border-radius: 8px;
@@ -645,7 +645,7 @@ img {
   overflow: hidden;
 }
 
-.swiper::after {
+.swip::after {
   content: '';
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
@@ -658,8 +658,7 @@ img {
   z-index: 16;
 }
 
-.swiper-button {
-  color: #EC1F46;
+.swip-but {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -672,22 +671,22 @@ img {
   cursor: pointer;
 }
 
-.swiper-button--next {
+.swip-but--next {
   right: 18px;
   background-image: url(/img/arrow-next.svg);
 }
 
-.swiper-button--prev {
+.swip-but--prev {
   left: 18px;
   background-image: url(/img/arrow-prev.svg);
 }
 
-.swiper-slide {
+.swip-sli {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.swiper-slide--item {
+.swip-sli--it {
   -o-object-fit: cover;
      object-fit: cover;
   width: 728px;
@@ -970,6 +969,77 @@ img {
 .parallax-window {
   min-height: 260px;
   background: transparent;
+}
+
+.reviews {
+  background: #F5FAFE;
+}
+
+.reviews-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reviews-slide {
+  margin: auto;
+  margin-top: 90px;
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+}
+
+.reviews-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews-profile__avatar {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin-top: -45px;
+  margin-bottom: 9px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reviews-profile__username {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.reviews-profile__date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  margin-bottom: 4px;
+}
+
+.reviews-profile__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  padding: 18px 97px;
+  text-align: justify;
 }
 
 @media (max-width: 1200px) {
