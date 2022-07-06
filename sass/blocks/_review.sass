@@ -1,7 +1,22 @@
 .reviews
   background: $secondery
+  padding-top: 40px
+  padding-bottom: 70px
   &-swiper
-     
+    position: relative
+    &--button
+      position: absolute
+      top: 50%
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-size:10px
+      border: none
+      cursor: pointer
+      background-image: url(../img/arrow-prev.svg)
+      &-next
+        background-image: url(../img/arrow-next.svg)
+        right: 0
   &-title
     font-style: normal
     font-weight: 700
@@ -9,16 +24,39 @@
     line-height: 45px
     text-align: center
     text-transform: uppercase
+    margin: 0
+    margin-bottom: 70px
   &-slide
     margin: auto
+  &-profile
+    display: flex
+    margin-left: auto
+    margin-right: auto
+    flex-direction: column
+    align-items: center
     margin-top: 90px
     background: #fff
     border-radius: 8px
+    width: 730px
     position: relative
-  &-profile
-    display: flex
-    flex-direction: column
-    align-items: center
+    &:before
+      content: ''
+      height: 47px
+      width: 70px
+      background-image: url(../img/quote-left.svg)
+      background-repeat: no-repeat
+      position: absolute
+      left: 60px
+      top: 13px
+    &:after
+      content: ''
+      height: 47px
+      width: 70px
+      background-image: url(../img/quote-right.svg)
+      background-repeat: no-repeat
+      position: absolute
+      right: 60px
+      bottom: 113px
     &__avatar
       border-radius: 50%
       width: 90px
@@ -45,5 +83,6 @@
       font-weight: 400
       font-size: 12px
       line-height: 160%
-      padding: 18px 97px
+      margin: 18px 97px
       text-align: justify
+      width: 537px

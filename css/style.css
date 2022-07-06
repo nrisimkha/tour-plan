@@ -973,6 +973,8 @@ img {
 
 .reviews {
   background: #F5FAFE;
+  padding-top: 40px;
+  padding-bottom: 70px;
 }
 
 .reviews-title {
@@ -982,20 +984,20 @@ img {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 70px;
 }
 
 .reviews-slide {
   margin: auto;
-  margin-top: 90px;
-  background: #fff;
-  border-radius: 8px;
-  position: relative;
 }
 
 .reviews-profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1003,6 +1005,33 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 90px;
+  background: #fff;
+  border-radius: 8px;
+  width: 730px;
+  position: relative;
+}
+
+.reviews-profile:before {
+  content: '';
+  height: 47px;
+  width: 70px;
+  background-image: url(../img/quote-left.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 60px;
+  top: 13px;
+}
+
+.reviews-profile:after {
+  content: '';
+  height: 47px;
+  width: 70px;
+  background-image: url(../img/quote-right.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 60px;
+  bottom: 113px;
 }
 
 .reviews-profile__avatar {
@@ -1038,8 +1067,9 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 160%;
-  padding: 18px 97px;
+  margin: 18px 97px;
   text-align: justify;
+  width: 537px;
 }
 
 @media (max-width: 1200px) {
