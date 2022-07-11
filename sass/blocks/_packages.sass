@@ -1,0 +1,52 @@
+.packages
+  &-grid
+    display: grid
+    grid-template: 120px repeat(2, 500px) / repeat(3, 1fr)
+    grid-gap: 30px
+    grid-template-areas: header header header
+  &-header
+    grid-area: header
+    font-style: normal
+    font-weight: 700
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin: 0
+  &-top
+    grid-area: top
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    &__picture
+      position: relative
+      border-radius: 8px 0 0 8px
+      overflow: hidden
+    &__image
+      height: 100%
+      position: absolute
+      bottom: 0
+      object-fit: cover
+    &__booking
+      &-flash
+        position: absolute
+        top: 26px
+        left: 0
+        padding: 7px 11px
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 15px
+        color: $light
+        background: $primery
+        border: none
+        border-radius: 0 4px 4px 0
+        cursor: pointer
+  &-variant
+    &__1
+      grid-area: variant__1
+    &__2
+      grid-area: variant__2
+    &__3
+      grid-area: variant__3
+    &__4
+      grid-area: variant__4
