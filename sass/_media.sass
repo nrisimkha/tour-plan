@@ -10,6 +10,10 @@
     width: 340px
   .map
     width: 340px
+  .activities
+    &-card
+      &__item
+        width: 230px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -45,6 +49,14 @@
   .search
     &__input
       width: 340px
+  .activities
+    &-card
+      flex-wrap: wrap
+      &__item
+        width: 340px
+        margin-bottom: 20px
+    &-name
+      width: 50%
 @media (max-width: 768px)
   .container
     max-width: 576
@@ -112,6 +124,11 @@
       max-width: 579px
       &__text
         max-width: 455px
+  .activities
+    &-card
+      justify-content: space-evenly
+      &__item
+        max-width: 270px
 @media (max-width: 576px)
   .logo
     max-width: 99px
@@ -120,6 +137,24 @@
     &-slider
       &--item
         height: 300px
+  .reviews
+    &-profile
+      width: 270px
+      height: 600px
+      &:before
+        content: ''
+        display: none
+      &:after
+        content: ''
+        display: none
+      &__text
+        width: 250px
+        text-align: start
+        height: content
+  .activities
+    &-card
+      &__item
+        max-width: 340px
 @media (max-width: 320px)
   .container
     max-width: 88%
@@ -144,4 +179,14 @@
     &-email
       &__input
         width: 100%
-  
+  .reviews
+    &-profile
+      width: 90%
+      &__text
+        width: 90%
+  .activities
+    &-card
+      &__item
+        width: 280px
+    &-name
+      width: 70%
